@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Desarrollador Full Stack de páginas web y aplicaciones, apasionado por la innovación, la tecnología y la satisfacción del cliente">
+    <meta name="robots" content="index,follow">
+    <meta title="Samuel Romerin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="Google Chrome">
+    <link rel="stylesheet" href="./CSS/index-mobile.css">
+    <link rel="stylesheet" href="./CSS/index-tablet.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="./CSS/index-desktop.css" media="screen and (min-width: 800px)">
+    <link rel="stylesheet" href="./CSS/index-desktop-2.css" media="screen and (min-width: 1000px)">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+      </style>
+</head>
+
+<body>
+    <header>
+        <figure class="header-figure__logo-container">
+            <img
+                src="./ICONS/WHITE-LOGO.png" 
+                alt="Logotipo"/>
+        </figure>
+        <nav class="header-nav__menu-container">
+            <ul class="header-nav-ul__menu">
+                <li><a href="#div__presentation-container">About me</a></li>
+                <li><a href="#section_2">Projects</a></li>
+                <li><a href="#section_3">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="div__presentation-container">
+        <figure>
+            <img 
+                src="./IMAGES/PHOTO-ME.jpg" 
+                alt="Foto de Samuel"/>
+        </figure>
+        <span class="div-span__hello">Hello, my name is <b>Samuel</b>.</span>
+    </div>
+
+    <main>
+        <section class="main-section__section1">
+            <p>I am a Full Stack Developer of web pages and mobile applications, located in Medellín, Colombia; Passionate about innovation, detail and customer satisfaction. I help companies and people create ambitious and affordable solutions.</p>
+        </section>
+
+        <section class="main-section__section2" id="section_2">
+            <p>Take a look of some pictures of my projects or visit the websites by clicking: <a href="https://extraordinary-kataifi-a8e50e.netlify.app/" target="_blank">BlueCell Devices</a> - <a href="https://papaya-choux-e587ad.netlify.app/" target="_blank">Mi Plata</a></p>
+            
+            <div class="carousel-container" id="section-carousel">
+                <div class="carousel">
+                    <div id="slide">
+                        <img src="./IMAGES/bluecell_1.png" alt="">
+                        <img src="./IMAGES/bluecell_2.png" alt="">
+                        <img src="./IMAGES/bluecell_3.png" alt="">
+                        <img src="./IMAGES/bluecell_4.png" alt="">
+                        <img src="./IMAGES/bluecell_5.png" alt="">
+                        <img src="./IMAGES/bluecell_6.png" alt="">
+                    </div>
+                    <div class="botones-carousel">
+                        <button class="btn" id="regresar" onclick="regresar(event)"><</button>
+                        <button class="btn" id="adelantar" onclick="adelantar(event)">></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-container" id="section-carousel">
+                <div class="carousel">
+                    <div id="slide2">
+                        <img src="./IMAGES/mi_plata_1.png" alt="">
+                        <img src="./IMAGES/mi_plata_2.png" alt="">
+                        <img src="./IMAGES/mi_plata_3.png" alt="">
+                        <img src="./IMAGES/mi_plata_4.png" alt="">
+                        <img src="./IMAGES/mi_plata_5.png" alt="">
+                    </div>
+                    <div class="botones-carousel">
+                        <button class="btn" id="regresar" onclick="regresar2(event)"><</button>
+                        <button class="btn" id="adelantar" onclick="adelantar2(event)">></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-container2" id="section-carousel">
+                <div class="carousel">
+                    <div id="slide3">
+                        <img src="./IMAGES/smart_health_1.png" alt="">
+                        <img src="./IMAGES/smart_health_2.png" alt="">
+                        <img src="./IMAGES/smart_health_3.png" alt="">
+                        <img src="./IMAGES/smart_health_4.png" alt="">
+                    </div>
+                    <div class="botones-carousel">
+                        <button class="btn" id="regresar" onclick="regresar3(event)"><</button>
+                        <button class="btn" id="adelantar" onclick="adelantar3(event)">></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+s
+        <section class="main-section__section3" id="section_3">
+            <span>Request my services:</span>
+
+            <div class="form-container">
+                <form action="samuelromerinoviedo@hotmail.com">
+                    <h2>Contact Form</h2>
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" cols="20" rows="10"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="button" id="btn-enviar" value="Enviar">
+                    </div>
+                </form>
+            </div>       
+        </section>
+    </main>
+
+    <aside>
+        <ul class="aside-ul__social-media">
+            <li>
+                <a href="https://www.facebook.com/Samuel.Romerin" target="_blank">
+                    <img 
+                        id= "facebook" 
+                        src="./ICONS/FACEBOOK WHITE.png"
+                        alt="Ícono de Facebook"/>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/samurovi/" target="_blank">
+                    <img 
+                        id= "instagram" 
+                        src="./ICONS/INSTAGRAM WHITE.png"
+                        alt="Ícono de Instagram"/>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/samuel-romerin-689b86213/" target="_blank">
+                    <img 
+                        id= "linkedin"
+                        src="./ICONS/LINKEDIN WHITE.png"
+                        alt="Ícono de linkedin"/>
+                </a>
+            </li>
+            <li>
+                <a href="https://wa.me/573003167892" target="_blank">
+                    <img 
+                        id="whatsapp" 
+                        src="./ICONS/WHATSAPP WHITE.png"
+                        alt="Ícono de Whatsapp"/>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <footer>
+        <span>
+            &#169 Samuel Romerin 2024
+        </span>
+    </footer>
+
+    <script src="./JS/portafolio.js"></script>
+</body>
+</html>
